@@ -15,9 +15,9 @@ class CreateStudenti extends Migration
     {
         Schema::create('studenti', function (Blueprint $table) {
             $table->id();
-            $table->string("nume",15);
-            $table->string("prenume",20);
-            $table->string("legitimatie",6);
+            $table->string('nume',15);
+            $table->string('prenume',20);
+            $table->string('legitimatie',6);
             $table->timestamps();
         });
     }
