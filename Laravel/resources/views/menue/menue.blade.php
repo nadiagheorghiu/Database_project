@@ -8,22 +8,15 @@
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
     <script src="/public/file.js"></script>
+    <style>
+        .active {
+            color: red;
+        }
+    </style>
 </head>
 
 <header>
-    <nav>
-        <ul>
-            <li>
-                <a href="">About</a>
-            </li>
-            <li>
-                <a href="">Portfolio</a>
-            </li>
-            <li>
-                <a href="">Contacts</a>
-            </li>
-        </ul>
-    </nav>
+    @include('menue.header')
 </header>
 
 <div id="mySidenav" class="sidenav">
@@ -40,7 +33,5 @@
 @yield('content')
 
 <footer>
-    <div class="container-footer">
-        <img src="" alt="">
-    </div>
+    @include('menue.footer')
 </footer>

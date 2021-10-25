@@ -22,24 +22,16 @@ use App\Http\Controllers\ExamenController;
 
 Route::get('/', [PagesController::class, 'index']);
 
-// Route::get('/home', [PagesController::class, 'index']);
-Route::get('/home', function () {
-    return view('index');
-});
-// Route::get('/add', [PagesController::class, 'index']);
-Route::get('/add', function () {
-    return view('index');
-});
-//Route::get('/index', [PagesController::class, 'index']);
-Route::get('/index', function () {
-    return view('index');
-});
+Route::get('/home', [PagesController::class, 'index'])->name('home');
 
-Route::get('/studenti', [StudentController::class, 'index']);
+Route::get('/add', [PagesController::class, 'index'])->name('add');
+
+Route::get('/index', [PagesController::class, 'index'])->name('index');
+
+Route::get('/studenti', [StudentController::class, 'index'])->name('studenti');
 
 //Pattern
-Route::get('/studenti/{name}', 
-[StudentController::class, 'show'])->where('name', '[a-zA-Z]+(?: [a-zA-Z]+)?');
+Route::get('/studenti/{name}', [StudentController::class, 'show'])->name('student')->where('name', '[a-zA-Z]+(?: [a-zA-Z]+)?');
 
 // Route::get('/studenti/{name}/{id}', 
 // [StudentController::class, 'show'])->where([

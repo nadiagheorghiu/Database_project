@@ -8,6 +8,20 @@ class StudentController extends Controller
 {
     public function index() {
         $title = "Welcome to pagina studenti";
+        print_r($title);
+        $data = [
+            [1, 'Ana', 'Banana', 12345],
+            [2, 'Petru', 'Movila', 13476],
+            [3, 'Salai', 'Baltai', 55555]
+        ];
+
+        return view('pagini.students',[
+            'data' => $data
+        ]);
+    }
+
+    public function display() {
+        $title = "Welcome to pagina studenti";
         $description = "Created by students";
         $data = [
             'studOne' => 'Ana',
