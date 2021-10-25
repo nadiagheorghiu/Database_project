@@ -16,22 +16,16 @@
 </head>
 
 <header>
-    @include('menue.header')
+    @include('main.header')
 </header>
 
 <div id="mySidenav" class="sidenav">
-    <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
-    <a href="{{ route('home') }}">Home</a>
-    <a href="{{ route('add') }}">Add Info</a>
-    <a href="{{ route('index') }}">Tasks</a>
-    <a href="{{ route('studenti') }}">Tabel Studenti</a>
-    <a href="#">Clients</a>
-    <a href="#">Tabel Ordonat</a>
+    @include('main.menue')
 </div>
 <span style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776; menu</span>
 
 @yield('content')
 
 <footer>
-    @include('menue.footer')
+    @include('main.footer')
 </footer>
