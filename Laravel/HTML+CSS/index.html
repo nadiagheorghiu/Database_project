@@ -1,0 +1,418 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Proiect PBD</title>
+<link rel="stylesheet" type="text/css" href="style.css">
+<meta charset="utf-8"> 
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+<script src="file.js"></script>
+</head>
+<body>
+    
+<div id="mySidenav" class="sidenav">
+  <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+  <a href="home.html">Home</a>
+  <a href="#">Add new student</a>
+  <a href="add.html">Add Info</a>
+  <a href="#">Clients</a>
+  <a href="tabel_studenti.html">Tabel Studenti</a>
+  <a href="#">Tabel Ordonat</a>
+</div>
+
+<h2>Proiect PBD</h2>
+ 
+<span style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776; menu</span>
+
+<script>
+function openNav() {
+  document.getElementById("mySidenav").style.width = "250px";
+}
+
+function closeNav() {
+  document.getElementById("mySidenav").style.width = "0";
+}
+</script>
+</br>
+</br> 
+<div class="tab">
+  <button class="tablinks" onclick="openCity(event, '1')">4</button>
+  <button class="tablinks" onclick="openCity(event, '2')">5</button>
+  <button class="tablinks" onclick="openCity(event, '3')">6</button>
+  <button class="tablinks" onclick="openCity(event, '4')">7</button>
+  <button class="tablinks" onclick="openCity(event, '5')">8</button>
+  <button class="tablinks" onclick="openCity(event, '6')">9</button>
+  <button class="tablinks" onclick="openCity(event, '7')">10</button>
+</div>
+
+<div id="1" class="tabcontent">
+  <h3>Studentii care au discipline nepromovate</h3>
+  <table class="table table-striped">
+    <thead>
+      <tr>
+        <th>ID Student</th>
+        <th>Firstname</th>
+        <th>Lastname</th> 
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>1</td>
+        <td>Anna</td>
+        <td>1</td> 
+      </tr>
+      <tr>
+        <td>2</td>
+        <td>Debbie</td>
+        <td>2</td> 
+      </tr>
+      <tr>
+        <td>3</td>
+        <td>John</td>
+        <td>2</td>
+         </tr>
+      <tr>
+          <td>4</td>
+          <td>Debbie</td>
+          <td>2</td>
+             </tr>
+        <tr>
+          <td>5</td>
+          <td>John</td>
+          <td>2</td>
+           
+        </tr>
+        <tr>
+          <td>3</td>
+          <td>John</td>
+          <td>2</td>
+           
+        </tr>
+        <tr>
+            <td>4</td>
+            <td>Debbie</td>
+            <td>2</td>
+             
+          </tr>
+          <tr>
+            <td>5</td>
+            <td>John</td>
+            <td>2</td>
+              </tr>
+    </tbody>
+  </table>
+</div>
+
+<div id="2" class="tabcontent">
+  <h3>Raport</h3>
+  <table class="table table-striped">
+    <thead>
+      <tr>
+        <th>ID Student</th>
+        <th>Firstname</th>
+        <th>Lastname</th> 
+        <th>An Studiu</th>
+        <th>Nr Matricol</th> 
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>1</td>
+        <td>Anna</td>
+        <td>1</td> 
+        <td>2</td>
+        <td>12345</td>
+      </tr>
+      <tr>
+        <td>1</td>
+        <td>Anna</td>
+        <td>1</td> 
+        <td>2</td>
+        <td>12345</td>
+      </tr>
+      <tr>
+        <td>1</td>
+        <td>Anna</td>
+        <td>1</td> 
+        <td>2</td>
+        <td>12345</td>
+         </tr>
+      <tr>
+        <td>1</td>
+        <td>Anna</td>
+        <td>1</td> 
+        <td>2</td>
+        <td>12345</td>
+             </tr>
+        <tr>
+          <td>1</td>
+          <td>Anna</td>
+          <td>1</td> 
+          <td>2</td>
+          <td>12345</td>
+        </tr>
+        <tr>
+          <td>1</td>
+        <td>Anna</td>
+        <td>1</td> 
+        <td>2</td>
+        <td>12345</td>
+        </tr>
+        <tr>
+          <td>1</td>
+          <td>Anna</td>
+          <td>1</td> 
+          <td>2</td>
+          <td>12345</td>
+          </tr>
+          <tr>
+            <td>1</td>
+            <td>Anna</td>
+            <td>1</td> 
+            <td>2</td>
+            <td>12345</td>
+              </tr>
+    </tbody>
+  </table>
+</div>
+<div id="3" class="tabcontent">
+  <h3>Raport</h3>
+  <table class="table table-striped">
+    <thead>
+      <tr>
+        <th>ID Student</th>
+        <th>Firstname</th>
+        <th>Lastname</th> 
+        <th>An Studiu</th>
+        <th>Nr Matricol</th> 
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>1</td>
+        <td>Anna</td>
+        <td>1</td> 
+        <td>2</td>
+        <td>12345</td>
+      </tr>
+      <tr>
+        <td>1</td>
+        <td>Anna</td>
+        <td>1</td> 
+        <td>2</td>
+        <td>12345</td>
+      </tr>
+      <tr>
+        <td>1</td>
+        <td>Anna</td>
+        <td>1</td> 
+        <td>2</td>
+        <td>12345</td>
+         </tr>
+      <tr>
+        <td>1</td>
+        <td>Anna</td>
+        <td>1</td> 
+        <td>2</td>
+        <td>12345</td>
+             </tr>
+        <tr>
+          <td>1</td>
+          <td>Anna</td>
+          <td>1</td> 
+          <td>2</td>
+          <td>12345</td>
+        </tr>
+        <tr>
+          <td>1</td>
+        <td>Anna</td>
+        <td>1</td> 
+        <td>2</td>
+        <td>12345</td>
+        </tr>
+        <tr>
+          <td>1</td>
+          <td>Anna</td>
+          <td>1</td> 
+          <td>2</td>
+          <td>12345</td>
+          </tr>
+          <tr>
+            <td>1</td>
+            <td>Anna</td>
+            <td>1</td> 
+            <td>2</td>
+            <td>12345</td>
+              </tr>
+    </tbody>
+  </table>
+</div>
+
+<div id="4" class="tabcontent">
+  <div class="container">
+    <h2>ADD MARKS</h2> 
+    <form>
+        <div class="form-row">
+            <div class="form-group col-md-6">
+              <label for=" ">Nume</label>
+              <input type="text" class="form-control"  placeholder="Nume">
+            </div>
+            <div class="form-group col-md-6">
+              <label for=" ">Prenume</label>
+              <input type="text" class="form-control"  placeholder="Prenume">
+            </div>
+          </div>
+ 
+          <div class="form-row">
+            <div class="form-group col-md-6">
+              <label for="">Disciplina</label>
+              <select id=" " class="form-control"  >
+                <option selected>ss...</option>
+                <option>...</option>
+                <option>...</option>
+                <option>...</option>
+                <option>...</option>
+              </select>
+            </div>
+            <div class="form-group col-md-4">
+              <label for="">Examen</label>
+              <select id=" " class="form-control" >
+                <option selected>Choose...</option>
+                <option>...</option>
+                <option>...</option>
+                <option>...</option>
+                <option>...</option>
+              </select>
+            </div>
+            <div class="form-group col-md-2">
+              <label for="">Nota</label>
+              <input type="number" class="form-control" id=" " placeholder="Nota">
+            </div>
+          </div>
+      
+          <button type="submit" class="btn btn-primary">Add</button>
+          <table class="table table-striped">
+            <thead>
+              <tr>
+                <th>Media generala</th>
+                <th>Media pe anul curent</th>
+              
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>9.9</td>
+                <td>10</td>
+              </tr> 
+            </tbody>
+          </table>
+    </form>
+  </div>
+</div>
+<div id="5" class="tabcontent">
+  <div class="container">
+    <h2>Choose Disciplina</h2> 
+    <form>
+         
+          <div class="form-row">
+            <div class="form-group col-md-6">
+              <label for="">Disciplina</label>
+              <select id=" " class="form-control"  >
+                <option selected>ss...</option>
+                <option>...</option>
+                <option>...</option>
+                <option>...</option>
+                <option>...</option>
+              </select>
+            </div>
+            </div>
+          </br>
+        </br>
+      </br>
+    </br>
+            <button type="submit" class="btn btn-primary">Add</button>
+
+          <h3>Promovabilitatea este de: ...%</h3>   
+    </form>
+  </div>
+</div>
+
+<div id="6" class="tabcontent">
+  <h3>Paris</h3>
+  <p>Paris is the capital of France.</p> 
+</div>
+
+<div id="7" class="tabcontent">
+  <h3>Tokyo</h3>
+  <table class="table table-striped">
+    <thead>
+      <tr>
+        <th>ID Student</th>
+        <th>Firstname</th>
+        <th>Lastname</th> 
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>1</td>
+        <td>Anna</td>
+        <td>1</td> 
+      </tr>
+      <tr>
+        <td>2</td>
+        <td>Debbie</td>
+        <td>2</td> 
+      </tr>
+      <tr>
+        <td>3</td>
+        <td>John</td>
+        <td>2</td>
+         </tr>
+      <tr>
+          <td>4</td>
+          <td>Debbie</td>
+          <td>2</td>
+             </tr>
+        <tr>
+          <td>5</td>
+          <td>John</td>
+          <td>2</td>
+           
+        </tr>
+        <tr>
+          <td>3</td>
+          <td>John</td>
+          <td>2</td>
+           
+        </tr>
+        <tr>
+            <td>4</td>
+            <td>Debbie</td>
+            <td>2</td>
+             
+          </tr>
+          <tr>
+            <td>5</td>
+            <td>John</td>
+            <td>2</td>
+              </tr>
+    </tbody>
+  </table>  
+</div>
+  <div class="footer">
+    <div id="button"></div>
+  <div id="container">
+  <div id="cont">
+  <div class="footer_center">
+ 
+         <h3>Proiect PBD</h3>
+          
+  </div>
+  </div>
+  </div>
+  </div>
+</body>
+</html> 
+
