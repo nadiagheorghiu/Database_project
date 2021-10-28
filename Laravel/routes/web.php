@@ -20,7 +20,7 @@ use App\Http\Controllers\ExamenController;
 //     return view('welcome');
 // });
 
-Route::get('/', [PagesController::class, 'index']);
+Route::get('/', [PagesController::class, 'index'])->name('/');
 
 Route::get('/home', [PagesController::class, 'index'])->name('home');
 
@@ -28,10 +28,15 @@ Route::get('/add', [PagesController::class, 'index'])->name('add');
 
 Route::get('/index', [PagesController::class, 'index'])->name('index');
 
+//Route::get('/studenti', [StudentController::class, 'index'])->name('studenti');
+
 Route::get('/studenti', [StudentController::class, 'index'])->name('studenti');
+Route::post('/studenti', [StudentController::class, 'index'])->name('studenti');
+
+//Route::resource('/studenti', StudentController::class)->name('studenti');
 
 //Pattern
-Route::get('/studenti/{name}', [StudentController::class, 'show'])->name('student')->where('name', '[a-zA-Z]+(?: [a-zA-Z]+)?');
+//Route::get('/studenti/{name}', [StudentController::class, 'show'])->name('student')->where('name', '[a-zA-Z]+(?: [a-zA-Z]+)?');
 
 // Route::get('/studenti/{name}/{id}', 
 // [StudentController::class, 'show'])->where([
