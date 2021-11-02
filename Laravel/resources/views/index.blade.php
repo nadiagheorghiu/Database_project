@@ -1,4 +1,4 @@
-@extends('menue.menue')
+@extends('app')
 
 @section('content')
 <div>

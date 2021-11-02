@@ -1,3 +1,5 @@
+@extends('app') @section('content')
+
 <div class="container">
   <h2>TABEL STUDENTI</h2>
 
