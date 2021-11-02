@@ -1,14 +1,16 @@
-<div class="container">
-  <h2>TABEL STUDENTI</h2>
+@extends('add_page/menu_add')
 
+@include('menue/menue')
+
+<div id="1" class="tabcontent">
+  <h3>Studentii care au discipline nepromovate</h3>
   <table class="table table-striped">
-  <thead>
+    <thead>
       <tr>
         <th>ID Student</th>
         <th>Firstname</th>
         <th>Lastname</th>
-        <th>An Studiu</th>
-        <th>Nr Matricol</th>
+
       </tr>
     </thead>
     <tbody>
@@ -17,11 +19,12 @@
         <td>{{$student->c_id}}</td>
         <td>{{$student->c_first_name}}</td>
         <td>{{$student->c_last_name}}</td>
-        <td>{{$student->c_an_studiu}}</td>
-        <td>{{$student->c_nr_matricol}}</td>
+
       </tr>
       @endforeach
 
     </tbody>
+
+
   </table>
 </div>

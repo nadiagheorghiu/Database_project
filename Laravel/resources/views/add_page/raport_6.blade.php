@@ -1,8 +1,9 @@
-<div class="container">
-  <h2>TABEL STUDENTI</h2>
+@extends('menue/menue')
 
+<div id="3" class="tabcontent">
+  <h3>Raport</h3>
   <table class="table table-striped">
-  <thead>
+    <thead>
       <tr>
         <th>ID Student</th>
         <th>Firstname</th>
