@@ -24,7 +24,7 @@ Route::get('/', [PagesController::class, 'index'])->name('/');
 
 Route::get('/home', [PagesController::class, 'index'])->name('home');
 
-Route::get('/add', [PagesController::class, 'index'])->name('add');
+//Route::get('/add', [PagesController::class, 'index'])->name('add');
 
 Route::get('/index', [PagesController::class, 'index'])->name('index');
 
@@ -32,6 +32,9 @@ Route::get('/index', [PagesController::class, 'index'])->name('index');
 
 Route::get('/studenti', [StudentController::class, 'index'])->name('studenti');
 Route::post('/studenti', [StudentController::class, 'index'])->name('studenti');
+
+Route::get('form/new', [AddInfoController::class, 'index'])->name('form/new');
+Route::post('form/save', [AddInfoController::class, 'saveRecord'])->name('form/save');
 
 //Route::resource('/studenti', StudentController::class)->name('studenti');
 

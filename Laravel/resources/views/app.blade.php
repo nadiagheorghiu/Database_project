@@ -14,18 +14,14 @@
     @include('main.header')
 </header>
 
-<div class="row">
-    <div class="column">
-        <div id="mySidenav" class="sidenav">
-            @include('main.menue')
-        </div>
-        <span style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776; menu</span>
+    <div id="mySidenav" class="sidenav">
+        @include('main.menue')
     </div>
+    <span style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776; menu</span>
 
     <div>
         @yield('content')
     </div>
-</div>
 <footer>
     @include('main.footer')
 </footer>
