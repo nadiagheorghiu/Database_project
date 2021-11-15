@@ -1,4 +1,6 @@
-@extends('app') @section('content')
+@extends('app') 
+
+@section('content')
 
 <div class="container">
   <h2>TABEL STUDENTI</h2>
@@ -9,21 +11,22 @@
         <th>ID Student</th>
         <th>Firstname</th>
         <th>Lastname</th>
-        <th>An Studiu</th>
         <th>Nr Matricol</th>
+        <!--<th>An Studiu</th>-->
       </tr>
     </thead>
     <tbody>
       @foreach($studenti as $student)
       <tr>
-        <td>{{$student->c_id}}</td>
-        <td>{{$student->c_first_name}}</td>
-        <td>{{$student->c_last_name}}</td>
-        <td>{{$student->c_an_studiu}}</td>
-        <td>{{$student->c_nr_matricol}}</td>
+        <td>{{$student->id}}</td>
+        <td>{{$student->nume}}</td>
+        <td>{{$student->prenume}}</td>
+        <td>{{$student->legitimatie}}</td>
       </tr>
       @endforeach
 
     </tbody>
   </table>
 </div>
+
+@endsection

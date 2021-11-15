@@ -9,8 +9,8 @@ use App\Models\Student;
 class StudentController extends Controller
 {
     public function index() {
-        $title = "Welcome to pagina studenti";
-        print_r($title);
+        //$title = "Welcome to pagina studenti";
+        //print_r($title);
         $studenti = Student::all();
         // $studenti = Student::where('id','=','1')
         //     ->get();
@@ -25,7 +25,7 @@ class StudentController extends Controller
         ]);*/
         //dd($studenti);
         return view('pagini.students', [
-            'data' => $studenti
+            'studenti' => $studenti
         ]);
     }
 
