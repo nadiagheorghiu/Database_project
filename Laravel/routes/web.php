@@ -21,15 +21,10 @@ use App\Http\Controllers\ExamenController;
 // });
 
 Route::get('/', [PagesController::class, 'index'])->name('/');
-
 Route::get('/home', [PagesController::class, 'index'])->name('home');
-
 Route::get('/add', [PagesController::class, 'index'])->name('add');
-
 Route::get('/index', [PagesController::class, 'index'])->name('index');
-
 //Route::get('/studenti', [StudentController::class, 'index'])->name('studenti');
-
 Route::get('/studenti', [StudentController::class, 'index'])->name('studenti');
 Route::post('/studenti', [StudentController::class, 'index'])->name('studenti');
 
@@ -68,3 +63,22 @@ Route::get('/users', function () {
 Route::get('/users', function () {
     return redirect('/');
 });*/
+
+
+
+//routes 
+//studenti
+Route::get('/add_student',[App\Http\Controllers\StudentController::class,'create'])->name('add_student');
+Route::post('/store_student',[App\Http\Controllers\StudentController::class,'store'])->name('store.student');
+
+//disciplina
+Route::get('/add_disciplina',[App\Http\Controllers\DisciplinaController::class,'create'])->name('add_disciplina');
+Route::post('/store_disciplina',[App\Http\Controllers\DisciplinaController::class,'store'])->name('store.disciplina');
+
+//note
+Route::get('/add_nota',[App\Http\Controllers\NotaController::class,'create'])->name('add_nota');
+Route::post('/store_nota',[App\Http\Controllers\NotaController::class,'store'])->name('store.nota');
+
+//examen
+Route::get('/add_examen',[App\Http\Controllers\ExamenController::class,'create'])->name('add_examen');
+Route::post('/store_examen',[App\Http\Controllers\ExamenController::class,'store'])->name('store.examen');
