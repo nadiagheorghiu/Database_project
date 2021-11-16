@@ -15,7 +15,7 @@
             </div>
         
             <div class="input-group form-check-inline">
-                <label for="name" class="col-sm-2 col-form-label">Gander *</label>
+                <label for="name" class="col-sm-2 col-form-label">Gender *</label>
                 <label class="radio">
                     <input type="radio" class="" name="gander" value="male">
                     <span>Male</span>
