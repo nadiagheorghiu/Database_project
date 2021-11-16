@@ -1,3 +1,7 @@
+@extends('app') 
+
+@section('content')
+
 <html lang="en">
 
 <head>
@@ -22,3 +26,5 @@
 </body>
 
 </html>
+
+@endsection
