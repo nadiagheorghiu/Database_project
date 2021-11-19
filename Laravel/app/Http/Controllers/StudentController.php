@@ -24,9 +24,11 @@ class StudentController extends Controller
             'data' => $data
         ]);*/
         //dd($studenti);
-        return view('pagini.students', [
-            'studenti' => $studenti
-        ]);
+       // return view('pagini.students', [
+         //   'studenti' => $studenti
+       // ]);
+
+       return view('pagini.P7');
     }
 
     public function store(Request $request) {

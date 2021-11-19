@@ -1,7 +1,19 @@
 body {
     font-family: "Lato", sans-serif;
   }
- 
+  
+.web_site {
+    display: flex;
+}
+
+
+.header_page {
+  margin-left: 32px;
+  font-size: 18px;
+  color: #282828;
+  font-weight: bolder;
+}
+
   .sidenav {
     height: 100%;
     width: 0;

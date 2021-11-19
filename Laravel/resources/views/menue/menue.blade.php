@@ -29,9 +29,9 @@
 <div id="mySidenav" class="sidenav">
     <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
     <a href="{{ route('home') }}">Home</a>
-    <a href="{{ route('form/new') }}">Add Info</a>
-    <a href="{{ route('index') }}">Tasks</a>
-    <a href="{{ route('studenti') }}">Tabel Studenti</a>
+    <a href="{{ route('form/new') }}">Studenti</a>
+    <a href="{{ route('index') }}">Note</a>
+    <a href="{{ route('studenti') }}">Examen</a>
     <a href="#">Clients</a>
     <a href="#">Tabel Ordonat</a>
 </div>
@@ -43,4 +43,5 @@
     <div class="container-footer">
         <img src="" alt="">
     </div>
+    
 </footer>

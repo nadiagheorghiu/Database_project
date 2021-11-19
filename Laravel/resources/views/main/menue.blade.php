@@ -1,7 +1,5 @@
 <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
 <a href="{{ route('home') }}">Home</a>
-<a href="{{ route('form/new') }}">Add Info</a>
-<a href="{{ route('index') }}">Tasks</a>
-<a href="{{ route('studenti') }}">Tabel Studenti</a>
-<a href="#">Clients</a>
-<a href="#">Tabel Ordonat</a>
+<a href="{{ route('studenti') }}">Studenti</a>
+<a href="{{ route('P7') }}">Note</a>
+<a href="{{ route('examen') }}">Examen</a>

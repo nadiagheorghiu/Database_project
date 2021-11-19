@@ -75,6 +75,22 @@ Route::get('/users', function () {
 
 
 //routes 
+
+//for all
+//Route::get('/',[App\Http\Controllers\MainController::class,'getDashboard'])->name('dashboard');
+
+
+Route::get('/student', [App\Http\Controllers\StudentController::class, 'index'])->name('student');
+Route::get('/nota', [App\Http\Controllers\NotaController::class, 'index'])->name('nota');
+Route::get('/examen', [App\Http\Controllers\ExamenController::class, 'index'])->name('examen');
+Route::get('/p4', [App\Http\Controllers\P4Controller::class, 'index'])->name('P4');
+Route::get('/p5', [App\Http\Controllers\P5Controller::class, 'index'])->name('P5');
+Route::get('/p6', [App\Http\Controllers\P6Controller::class, 'index'])->name('P6');
+Route::get('/p7', [App\Http\Controllers\StudentController::class, 'index'])->name('P7');
+Route::get('/p8', [App\Http\Controllers\P8Controller::class, 'index'])->name('P8');
+Route::get('/p9', [App\Http\Controllers\P9Controller::class, 'index'])->name('P9');
+Route::get('/p10', [App\Http\Controllers\StudentController::class, 'index'])->name('P10');
+
 //studenti
 Route::get('/add_student',[App\Http\Controllers\StudentController::class,'create'])->name('add_student');
 Route::post('/store_student',[App\Http\Controllers\StudentController::class,'store'])->name('store.student');
