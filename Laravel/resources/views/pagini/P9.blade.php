@@ -1,7 +1,7 @@
 @extends('app')
 @section('content')
 <section class="web_site">
-    <div class="main_content_section">
+    <div class="main_content_section" style="justify-content: center;">
         <div class="row head">
             <div class="col-4 ">
                 <h2 class="header_page">Studentii care au discipline nepromovate</h2>

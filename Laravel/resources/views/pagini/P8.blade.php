@@ -1,7 +1,7 @@
 @extends('app')
 @section('content')
-<section class="web_site">
-    <div class="main_content_section">
+<section class="web_site" style="justify-content: center;">
+    <div class="main_content_section" style="justify-content: center;">
         <div class="row head">
             <div class="col-4 ">
                 <h2 class="header_page">Promovabilitate</h2>
@@ -9,7 +9,7 @@
         </div>
 
 
-        <div id="5" class="tabcontent">
+     
             <div class="container">
                 <h2>Choose Disciplina</h2>
                 <form>
@@ -26,6 +26,11 @@
                             </select>
                         </div>
                     </div>
+                <br>
+                <br> 
+                <br>
+                <br>
+
                     <div class="btn-group">
                         <input class="b bordcolor" type="reset" value="Anulare">
                         <input class="a bcolor" type="submit" value="Adauga">
@@ -34,6 +39,6 @@
                 </form>
             </div>
         </div>
-    </div>
+ 
 </section>
 @endsection

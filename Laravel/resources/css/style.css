@@ -7,11 +7,22 @@ body {
 }
 
 
+.main_content_section {
+  margin-top: 0px;
+  width: 85%;
+  padding-top: 46px;
+
+  margin-left: 217px;
+  padding-left: 25px;
+  padding-right: 71px;
+  padding-bottom: 400px;
+}
 .header_page {
-  margin-left: 32px;
-  font-size: 18px;
-  color: #282828;
-  font-weight: bolder;
+margin-left: 32px;
+font-size: 30px;
+color: #282828;
+font-weight: bolder;
+text-align: center;
 }
 
   .sidenav {

@@ -1,11 +1,11 @@
 @extends('app')
 @section('content')
 
-<section class="web_site">
+<section class="web_site" style="justify-content: center;">
     <div class="main_content_section">
         <div class="row head ">
             <div class="col-3 ">
-                <h2 class="header_page">Adauga o nota</h2>
+                <h2 class="header_page">Adauga un student</h2>
             </div>
         </div>
 

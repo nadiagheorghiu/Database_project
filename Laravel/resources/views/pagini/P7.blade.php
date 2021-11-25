@@ -2,10 +2,10 @@
 @section('content')
 
 <section class="web_site">
-    <div class="main_content_section">
+    <div class="main_content_section" style="justify-content: center;">
     <div class="row head">
             <div class="col-4 ">
-                <h2 class="header_page">Media</h2>
+                <h2 class="header_page">Media</h2> <br>
             </div>
         </div>
         <form>
@@ -52,6 +52,7 @@
                 <input class="b bordcolor" type="reset" value="Anulare">
                 <input class="a bcolor" type="submit" value="Adauga">
             </div>
+            <br>
             <table class="table table-striped">
                 <thead>
                     <tr>
