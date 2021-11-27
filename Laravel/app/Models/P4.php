@@ -5,12 +5,9 @@ namespace App\Models;
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Model;
 
-class Student extends Model
+class P4 extends Model
 {
     use HasFactory;
-
-    protected $table = 'studenti';
-    protected $guarded = []; 
-   // protected $primaryKey = 'id';
-
+    public $table = "studenti";
+    protected $guarded = [];
 }

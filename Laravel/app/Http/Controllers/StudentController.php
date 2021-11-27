@@ -8,7 +8,75 @@ use App\Models\Student;
 
 class StudentController extends Controller
 {
-    public function index() {
+
+    /**
+     * Display a listing of the resource.
+     *
+     * @return \Illuminate\Http\Response
+     */
+    public function index()
+    {
+        $studenti = Student::All();
+        return view('student', ['student' => $studenti]);
+    }
+
+    /**
+     * Show the form for creating a new resource.
+     *
+     * @return \Illuminate\Http\Response
+     */
+    public function create()
+    {
+        return view('adaugare_student');
+    }
+
+
+
+    /**
+     * Store a newly created resource in storage.
+     *
+     * @param  \Illuminate\Http\Request  $request
+     * @return \Illuminate\Http\Response
+     */
+    public function store(Request $request)
+    {
+
+
+        $this->validate($request, array(
+
+            'nume' => 'required',
+            'prenume' => 'required',
+            'legitimatie' => 'required'
+           
+        ));
+
+        $studenti = new Student();
+
+        $studenti->nume = $request->nume;
+        $studenti->prenume = $request->prenume;
+        $studenti->legitimatie = $request->legitimatie;
+        
+        $studenti->save();
+
+        return redirect()->route('student');
+    }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    /*  public function index() {
         //$title = "Welcome to pagina studenti";
         //print_r($title);
         $studenti = Student::all();
@@ -20,15 +88,15 @@ class StudentController extends Controller
             [3, 'Salai', 'Baltai', 55555]
         ];*/
 
-        /*return view('pagini.students',[
+    /*return view('pagini.students',[
             'data' => $data
         ]);*/
-        //dd($studenti);
-       // return view('pagini.students', [
-         //   'studenti' => $studenti
-       // ]);
+    //dd($studenti);
+    // return view('pagini.students', [
+    //   'studenti' => $studenti
+    // ]);
 
-       return view('pagini.P7');
+    /*      return view('pagini.P7');
     }
 
     public function store(Request $request) {
@@ -37,18 +105,18 @@ class StudentController extends Controller
                 'nume' => 'John',
                 'prenume' => 'Smith',
                 'legitimatie' => 12358
-            ]);
+            ]); */
 
-        //$posts = DB::table('studenti')
-            //->where('id', '=', 4)
-            //->update([
-                //'legitimatie' => 12359
-            //]);
+    //$posts = DB::table('studenti')
+    //->where('id', '=', 4)
+    //->update([
+    //'legitimatie' => 12359
+    //]);
 
-        //$posts = DB::table('studenti')
-            //->where('id', '=', 4)
-            //->delete();
-    }
+    //$posts = DB::table('studenti')
+    //->where('id', '=', 4)
+    //->delete();
+    /*    }
 
     public function show($id) {
         $id=1;
@@ -59,14 +127,14 @@ class StudentController extends Controller
         //$posts = DB::select('select * from studenti where id=:id', ['id'=>1]);
         dd($posts);
     }
-
+ */
     //public function edit($id) {}
 
     //public function update(Request $request, $id){} 
 
     //public function destroy($id) 
 
-    public function display() {
+    /* public function display() {
         $title = "Welcome to pagina studenti";
         $description = "Created by students";
         $data = [
@@ -84,7 +152,7 @@ class StudentController extends Controller
         // return view('pagini.index', [
         //     'data' => $data
         // ]);
-    }
+    } */
 
     // public function show($name){
     //     $data = [
@@ -95,5 +163,5 @@ class StudentController extends Controller
     //     return view('pagini.index', [
     //            'name' => $data[$name] ?? 'Studentul ' . $name . ' nu exista'
     //     ]);
-    // }
+    // } */
 }

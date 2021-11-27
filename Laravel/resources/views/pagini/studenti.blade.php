@@ -7,12 +7,12 @@
                 <h2 class="header_page">Studenti</h2>
             </div>
             <div class="col-5 pt-2">
-                <a href="{{route('add_student')}}" class="b bordcolor">Adaugare</a>
-                <a href="{{route('P4')}}" class="b bordcolor">P.4</a>
-                <a href="{{route('P6')}}" class="b bordcolor">P.6</a>
-                <a href="{{route('P8')}}" class="b bordcolor">P.8</a>
-                <a href="{{route('P9')}}" class="b bordcolor">P.9</a>
-                <a href="{{route('P10')}}" class="b bordcolor">P.10</a>
+                <button> <a href="{{route('adaugare_student')}}" class="b bordcolor">Adaugare</a></button>
+                <button> <a href="{{route('P4')}}" class="b bordcolor">P.4</a></button>
+                <button> <a href="{{route('P6')}}" class="b bordcolor">P.6</a></button>
+                <button> <a href="{{route('P8')}}" class="b bordcolor">P.8</a></button>
+                <button> <a href="{{route('P9')}}" class="b bordcolor">P.9</a></button>
+                <button> <a href="{{route('P10')}}" class="b bordcolor">P.10</a></button>
             </div>
         </div>
 

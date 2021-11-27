@@ -18,7 +18,7 @@
                         <th>Prenume</th>
                         <th>An Studiu</th>
                         <th>Nr Matricol</th>
-                        <th>Disciplina</th>
+                        <th>Discipslina</th>
                     </tr>
                 </thead>
                 <tbody>

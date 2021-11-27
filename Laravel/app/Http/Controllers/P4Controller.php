@@ -3,11 +3,10 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
-use App\Models\Medie;
-use App\Models\Disciplina;
-use App\Models\Student;
+use App\Models\P4;
  
-class MedieController extends Controller
+ 
+class P4Controller extends Controller
 {
   /**
      * Display a listing of the resource.
@@ -16,8 +15,8 @@ class MedieController extends Controller
      */
     public function index()
     {
-        $medii = Medie::All();
-        return view('media', ['media' => $medii]);
+        $P4 = P4::All();
+        return view('P4', ['P4' => $P4]);
     }
 
 }

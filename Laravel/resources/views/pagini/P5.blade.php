@@ -22,10 +22,10 @@
                 <tbody>
                     @foreach($studenti as $student)
                     <tr>
-                        <td>{{$student->c_first_name}}</td>
-                        <td>{{$student->c_last_name}}</td>
-                        <td>{{$student->c_an_studiu}}</td>
-                        <td>{{$student->c_nr_matricol}}</td>
+                        <td>{{$student->nume}}</td>
+                        <td>{{$student->prenume}}</td>
+                        <td>{{$student->an_studiu}}</td>
+                        <td>{{$student->legitimatie}}</td>
 
                     </tr>
                     @endforeach
