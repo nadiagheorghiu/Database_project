@@ -17,7 +17,7 @@ class CreateStudenti extends Migration
             $table->id();
             $table->string('nume',15);
             $table->string('prenume',20);
-            $table->string('legitimatie',6);
+            $table->string('legitimatie',6)->unique();
             $table->timestamps();
         });
     }

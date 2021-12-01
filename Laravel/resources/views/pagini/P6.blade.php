@@ -1,5 +1,6 @@
 @extends('app')
 @section('content')
+<div class="container">
 <section class="web_site">
     <div class="main_content_section" style="justify-content: center;">
         <div class="row head">
@@ -15,6 +16,7 @@
                         <th>Nume</th>
                         <th>Prenume</th>
                         <th>Nr Matricol</th>
+                        <th>An studiu</th>
                         <th>Disciplina</th>
                         <th>Nota</th>
                     </tr>
@@ -22,11 +24,12 @@
                 <tbody>
                     @foreach($studenti as $student)
                     <tr>
-                        <td>{{$student->c_first_name}}</td>
-                        <td>{{$student->c_last_name}}</td>
-                        <td>{{$student->c_nr_matricol}}</td>
-                        <td>{{$student->c_disciplina}}</td>
-                        <td>{{$student->c_nota}}</td>
+                        <td>{{$student->nume}}</td>
+                        <td>{{$student->prenume}}</td>
+                        <td>{{$student->legitimatie}}</td>
+                        <td>{{$student->an}}</td>
+                        <td>{{$student->nume_disciplina}}</td>
+                        <td>{{$student->mnota}}</td>
                     </tr>
                     @endforeach
 
@@ -35,4 +38,5 @@
         </div>
     </div>
 </section>
+</div>
 @endsection

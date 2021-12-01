@@ -17,17 +17,28 @@ use App\Http\Controllers\AddInfoController;
 |
 */
 
+
+Route::get('/', [StudentController::class, 'index'])->name('/');
+Route::get('/home', [StudentController::class, 'index'])->name('home');
+Route::get('/studenti', [StudentController::class, 'index'])->name('studenti');
+Route::get('/adaugare_student',[StudentController::class,'adaugare_student'])->name('adaugare_student');
+Route::post('/adaugare_student',[StudentController::class,'store'])->name('adaugare_student');
+Route::get('/p4', [StudentController::class, 'show_p4'])->name('P4');
+Route::get('/p6', [StudentController::class, 'show_p6'])->name('P6');
+Route::get('/p8', [StudentController::class, 'show_p8'])->name('P8');
+Route::post('/p8', [StudentController::class, 'calculate_p8'])->name('P8');
+Route::get('/p9', [StudentController::class, 'show_p9'])->name('P9');
+Route::get('/p10', [StudentController::class, 'show_p10'])->name('P10');
+
+
 // Route::get('/', function () {
 //     return view('welcome');
 // });
 /* 
-Route::get('/', [PagesController::class, 'index'])->name('/');
 Route::get('/home', [PagesController::class, 'index'])->name('home');
- 
 
 //Route::get('/add', [PagesController::class, 'index'])->name('add');
 
- 
 Route::get('/index', [PagesController::class, 'index'])->name('index');
 //Route::get('/studenti', [StudentController::class, 'index'])->name('studenti');
 Route::get('/studenti', [StudentController::class, 'index'])->name('studenti');
@@ -80,32 +91,27 @@ Route::get('/users', function () {
 //Route::get('/',[App\Http\Controllers\MainController::class,'getDashboard'])->name('dashboard');
 
 
-Route::get('/student', [App\Http\Controllers\StudentController::class, 'index'])->name('student');
 Route::get('/nota', [App\Http\Controllers\NotaController::class, 'index'])->name('nota');
-Route::get('/media', [App\Http\Controllers\MedieController::class, 'index'])->name('media');
+Route::post('/nota',[App\Http\Controllers\NotaController::class,'store'])->name('nota');
+
 Route::get('/examen', [App\Http\Controllers\ExamenController::class, 'index'])->name('examen');
-Route::get('/p4', [App\Http\Controllers\P4Controller::class, 'index'])->name('P4');
-Route::get('/p5', [App\Http\Controllers\P5Controller::class, 'index'])->name('P5');
-Route::get('/p6', [App\Http\Controllers\P6Controller::class, 'index'])->name('P6');
+Route::post('/examen',[App\Http\Controllers\ExamenController::class,'store'])->name('examen');
+
+Route::get('/media', [App\Http\Controllers\MedieController::class, 'index'])->name('media');
+Route::post('/disciplina',[App\Http\Controllers\DisciplinaController::class,'store'])->name('disciplina');
+
+Route::get('/p5', [App\Http\Controllers\StudentController::class, 'index'])->name('P5');
 Route::get('/p7', [App\Http\Controllers\StudentController::class, 'index'])->name('P7');
-Route::get('/p8', [App\Http\Controllers\P8Controller::class, 'index'])->name('P8');
-Route::get('/p9', [App\Http\Controllers\P9Controller::class, 'index'])->name('P9');
-Route::get('/p10', [App\Http\Controllers\P10Controller::class, 'index'])->name('P10');
 
 //studenti
-Route::get('/adaugare_student',[App\Http\Controllers\StudentController::class,'create'])->name('adaugare_student');
-Route::post('/student',[App\Http\Controllers\StudentController::class,'store'])->name('student');
 
 //disciplina
 Route::get('/adaugare_disciplina',[App\Http\Controllers\DisciplinaController::class,'create'])->name('adaugare_disciplina');
-Route::post('/disciplina',[App\Http\Controllers\DisciplinaController::class,'store'])->name('disciplina');
 
 //note
 Route::get('/adaugare_nota',[App\Http\Controllers\NotaController::class,'create'])->name('adaugare_nota');
-Route::post('/nota',[App\Http\Controllers\NotaController::class,'store'])->name('nota');
 
 //examen
 Route::get('/adaugare_examen',[App\Http\Controllers\ExamenController::class,'create'])->name('adaugare_examen');
-Route::post('/examen',[App\Http\Controllers\ExamenController::class,'store'])->name('examen');
 
  
