@@ -5,7 +5,7 @@
     <div class="main_content_section" style="justify-content: center;">
         <div class="row head">
             <div class="col-4 ">
-                <h2 class="header_page">Note Studenti - Tabel Ordonat</h2>
+                <h2 class="header_page">Tabel ordonat cu discipline promovate</h2>
             </div>
         </div>
 

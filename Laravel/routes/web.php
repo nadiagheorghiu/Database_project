@@ -4,7 +4,7 @@ use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\PagesController;
 use App\Http\Controllers\StudentController;
 use App\Http\Controllers\ExamenController;
-use App\Http\Controllers\AddInfoController;
+use App\Http\Controllers\NotaController;
 
 /*
 |--------------------------------------------------------------------------
@@ -17,7 +17,7 @@ use App\Http\Controllers\AddInfoController;
 |
 */
 
-
+//Studenti
 Route::get('/', [StudentController::class, 'index'])->name('/');
 Route::get('/home', [StudentController::class, 'index'])->name('home');
 Route::get('/studenti', [StudentController::class, 'index'])->name('studenti');
@@ -30,6 +30,10 @@ Route::post('/p8', [StudentController::class, 'calculate_p8'])->name('P8');
 Route::get('/p9', [StudentController::class, 'show_p9'])->name('P9');
 Route::get('/p10', [StudentController::class, 'show_p10'])->name('P10');
 
+//Note
+Route::get('/nota', [NotaController::class, 'index'])->name('nota');
+Route::post('/nota',[NotaController::class,'store'])->name('nota');
+Route::get('/adaugare_nota',[NotaController::class,'create'])->name('adaugare_nota');
 
 // Route::get('/', function () {
 //     return view('welcome');
@@ -90,9 +94,6 @@ Route::get('/users', function () {
 //for all
 //Route::get('/',[App\Http\Controllers\MainController::class,'getDashboard'])->name('dashboard');
 
-
-Route::get('/nota', [App\Http\Controllers\NotaController::class, 'index'])->name('nota');
-Route::post('/nota',[App\Http\Controllers\NotaController::class,'store'])->name('nota');
 
 Route::get('/examen', [App\Http\Controllers\ExamenController::class, 'index'])->name('examen');
 Route::post('/examen',[App\Http\Controllers\ExamenController::class,'store'])->name('examen');

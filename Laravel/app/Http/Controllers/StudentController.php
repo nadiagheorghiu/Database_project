@@ -143,7 +143,8 @@ class StudentController extends Controller
 
     public function show_p10(){
         /*
-        SELECT legitimatie,nume,prenume,count(numar_prezentare) as prezentari,SUM(CASE When nota>=5 Then 1 Else 0 End) as promovat 
+        SELECT legitimatie,nume,prenume,count(numar_prezentare) as prezentari,
+            SUM(CASE When nota>=5 Then 1 Else 0 End) as promovat 
             FROM `studenti` as s 
             join `note` as n on s.id=id_student 
             join `examene` as e on e.id=id_examen 
@@ -158,7 +159,6 @@ class StudentController extends Controller
                 DB::raw('count(numar_prezentare) as prezentari,SUM(CASE When nota>=5 Then 1 Else 0 End) as promovat'))
             ->groupBy('id_student')
             ->get();
-            //dd($student);
         return view('pagini.P10', ['studenti' => $student]);
     }
 

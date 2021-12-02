@@ -6,19 +6,24 @@ use Illuminate\Http\Request;
 use App\Models\Nota;
 use App\Models\Examen;
 use App\Models\Student;
+use App\Models\Disciplina;
 
 class NotaController extends Controller
-{
-    
+{    
     /**
      * Display a listing of the resource.
      *
      * @return \Illuminate\Http\Response
      */
     public function index()
-    {
-        $note = Nota::All();
-        return view('nota', ['nota' => $note]);
+    {        
+        $discipline = Disciplina::All();
+        $examene = Examen::All();
+        return view('pagini.adaugare_note', 
+            [
+                'discipline' => $discipline,
+                'examene' => $examene
+            ]);
     }
 
  
