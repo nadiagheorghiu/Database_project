@@ -12,6 +12,7 @@
                 <div class="col-5 pt-2">
                     <button> <a href="{{route('adaugare_student')}}" class="b bordcolor">Adaugare</a></button>
                     <button> <a href="{{route('P4')}}" class="b bordcolor">P.4</a></button>
+                    <button> <a href="{{route('P5')}}" class="b bordcolor">P.5</a></button>
                     <button> <a href="{{route('P6')}}" class="b bordcolor">P.6</a></button>
                     <button> <a href="{{route('P8')}}" class="b bordcolor">P.8</a></button>
                     <button> <a href="{{route('P9')}}" class="b bordcolor">P.9</a></button>

@@ -50,6 +50,24 @@ class StudentController extends Controller
         return view('pagini.P4', ['studenti' => $student]);
     }
 
+    public function show_p5(){
+        /*
+        SELECT nume,prenume,legitimatie,max(an_studiu) FROM `studenti` as s 
+        join `note` as n on s.id=id_student 
+        join `examene` as e on e.id=id_examen 
+        join `discipline` as d on d.id=id_disciplina 
+        group by id_student
+        */
+        $student = DB::table('studenti')
+            ->join('note', 'studenti.id', '=', 'id_student')
+            ->join('examene', 'examene.id', '=', 'id_examen')
+            ->join('discipline', 'discipline.id', '=', 'id_disciplina')
+            ->select('nume','prenume','legitimatie',DB::raw('max(an_studiu) as an'))
+            ->groupBy('id_student')
+            ->get();
+        return view('pagini.P5', ['studenti' => $student]);
+    }
+
     public function show_p6(){
         /*
         SELECT nume,prenume,legitimatie,nume_disciplina,max(an_studiu) as an,max(nota) as mnota FROM `studenti` as s 
@@ -180,96 +198,4 @@ class StudentController extends Controller
 
         return redirect()->route('studenti');
     }
-
-
-
-
-    /*  public function index() {
-        //$title = "Welcome to pagina studenti";
-        //print_r($title);
-        $studenti = Student::all();
-        // $studenti = Student::where('id','=','1')
-        //     ->get();
-        /*$data = [
-            [1, 'Ana', 'Banana', 12345],
-            [2, 'Petru', 'Movila', 13476],
-            [3, 'Salai', 'Baltai', 55555]
-        ];*/
-
-    /*return view('pagini.students',[
-            'data' => $data
-        ]);*/
-    //dd($studenti);
-    // return view('pagini.students', [
-    //   'studenti' => $studenti
-    // ]);
-
-    /*      return view('pagini.P7');
-    }
-
-    public function store(Request $request) {
-        $posts = DB::table('studenti')
-            ->insert([
-                'nume' => 'John',
-                'prenume' => 'Smith',
-                'legitimatie' => 12358
-            ]); */
-
-    //$posts = DB::table('studenti')
-    //->where('id', '=', 4)
-    //->update([
-    //'legitimatie' => 12359
-    //]);
-
-    //$posts = DB::table('studenti')
-    //->where('id', '=', 4)
-    //->delete();
-    /*    }
-
-    public function show($id) {
-        $id=1;
-        $posts = DB::table('studenti')
-            ->where('id', $id)
-            ->get();
-        //$posts = DB::select('select * from studenti where id=?', [1]);
-        //$posts = DB::select('select * from studenti where id=:id', ['id'=>1]);
-        dd($posts);
-    }
- */
-    //public function edit($id) {}
-
-    //public function update(Request $request, $id){} 
-
-    //public function destroy($id) 
-
-    /* public function display() {
-        $title = "Welcome to pagina studenti";
-        $description = "Created by students";
-        $data = [
-            'studOne' => 'Ana',
-            'studTwo' => 'Banana'
-        ];
-
-        //compact method
-        // return view('pagini.index', 
-        // compact('title', 'description'));
-
-        //with method
-        return view('pagini.index')->with('data', $data);
-        
-        // return view('pagini.index', [
-        //     'data' => $data
-        // ]);
-    } */
-
-    // public function show($name){
-    //     $data = [
-    //         'ana' => 'Ana',
-    //         'banana' => 'Banana'
-    //     ];
-
-    //     return view('pagini.index', [
-    //            'name' => $data[$name] ?? 'Studentul ' . $name . ' nu exista'
-    //     ]);
-    // } */
 }

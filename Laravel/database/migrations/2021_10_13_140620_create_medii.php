@@ -18,7 +18,7 @@ class CreateMedii extends Migration
             $table->unsignedBigInteger('id_disciplina')->foreign('id_disciplina')->references('id')->on('discipline');
             $table->unsignedBigInteger('id_student')->foreign('id_student')->references('id')->on('studenti');
             $table->smallInteger('an_studiu')->nullable();
-            $table->smallInteger('nota');
+            $table->float('nota', 2, 2);
             $table->timestamps();
         });
     }

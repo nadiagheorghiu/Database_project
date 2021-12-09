@@ -1,5 +1,6 @@
 @extends('app')
 @section('content')
+<div class="container">
 <section class="web_site">
     <div class="main_content_section" style="justify-content: center;">
         <div class="row head">
@@ -14,8 +15,8 @@
                     <tr>
                         <th>Nume</th>
                         <th>Prenume</th>
-                        <th>An Studiu</th>
                         <th>Nr Matricol</th>
+                        <th>An Studiu</th>
 
                     </tr>
                 </thead>
@@ -24,8 +25,8 @@
                     <tr>
                         <td>{{$student->nume}}</td>
                         <td>{{$student->prenume}}</td>
-                        <td>{{$student->an_studiu}}</td>
                         <td>{{$student->legitimatie}}</td>
+                        <td>{{$student->an}}</td>
 
                     </tr>
                     @endforeach
@@ -35,4 +36,5 @@
         </div>
     </div>
 </section>
+</div>
 @endsection

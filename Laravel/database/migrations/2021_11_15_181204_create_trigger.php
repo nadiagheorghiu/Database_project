@@ -20,7 +20,7 @@ class CreateTrigger extends Migration
                 (SELECT max(nota) as nota,dis.id as id_discipl,dis.an_studiu,id_student FROM `note` 
                 join `examene` ex on ex.id=id_examen 
                 join `discipline` dis on dis.id=ex.id_disciplina
-                WHERE id_student=@id_num group by dis.an_studiu, id_discipl, id_student) as x group by an_studiu, id_student;
+                group by dis.an_studiu, id_discipl, id_student) as x group by an_studiu, id_student;
             END
         ');
     }

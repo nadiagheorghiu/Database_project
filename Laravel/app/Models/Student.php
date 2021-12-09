@@ -11,6 +11,6 @@ class Student extends Model
 
     protected $table = 'studenti';
     protected $guarded = []; 
-   // protected $primaryKey = 'id';
+    //protected $primaryKey = 'id';
 
 }
