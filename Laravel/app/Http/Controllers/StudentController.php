@@ -110,8 +110,8 @@ class StudentController extends Controller
         $select_options = DB::table('discipline')
             ->select('nume_disciplina')
             ->get();
-        $total_student = DB::table('note')
-            ->count(DB::raw('DISTINCT id_student'));
+        /*$total_student = Student::All()
+            ->count();
         $promoted_students = DB::table('studenti')
             ->join('note', 'studenti.id', '=', 'id_student')
             ->join('examene', 'examene.id', '=', 'id_examen')
@@ -120,10 +120,17 @@ class StudentController extends Controller
             ->groupBy('id_disciplina','id_student')
             ->havingRaw('max(nota)>=5')
             ->count(DB::raw('DISTINCT id_student'));
-        $promoted_rate = intval(($promoted_students * 100) / $total_student);
+        $promoted_rate = intval(($promoted_students * 100) / $total_student);*/
+        $id_disc = DB::table('discipline')
+            ->select('id')
+            ->where('nume_disciplina','=',request()->disciplina)
+            ->first();
+        $promoted_rate = DB::select('select getPromovability(?) as rate', [$id_disc->id]);
+        //dd($id_disc->id, $promoted_rate, $flag[0]->rate);
+
         return view('pagini.P8', ['select_options' => $select_options, 
                                     'disciplina' => request()->disciplina, 
-                                    'rata' => $promoted_rate]);
+                                    'rata' => $promoted_rate[0]->rate]);
     }
 
     public function show_p9(){
