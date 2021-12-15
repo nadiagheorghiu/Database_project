@@ -5,7 +5,7 @@
         <div class="main_content_section" style="justify-content: center;">
             <div class="row head">
                 <div class="col-4 ">
-                    <h2 class="header_page">Note Studenti - Tabel Ordonat</h2>
+                    <h2 class="header_page" style="text-align: center;">Note Studenți - Tabel Ordonat</h2>
                 </div>
             </div>
 
@@ -15,7 +15,7 @@
                         <tr>
                             <th>Nume</th>
                             <th>Prenume</th>
-                            <th>Nr Prezentari</th>
+                            <th>Număr Prezentari</th>
                             <th>Rata de Promovabilitate</th>
 
                         </tr>

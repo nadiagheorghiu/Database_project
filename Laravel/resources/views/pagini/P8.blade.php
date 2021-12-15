@@ -5,11 +5,12 @@
         <div class="main_content_section" style="justify-content: center;">
             <div class="row head">
                 <div class="col-4 ">
-                    <h2 class="header_page">Promovabilitate</h2>
+                    <h2 class="header_page" style="text-align: center;">Promovabilitate</h2>
                 </div>
             </div>     
+            <br>
                 <div class="container">
-                    <h2>Choose Disciplina</h2>
+                    <h2>Alege Disciplina</h2>
                     <form method="POST"  action="{{ route('P8') }}">
                         @csrf
                         <div class="form-row">
@@ -28,9 +29,12 @@
                                 </select>
                             </div>
                         </div>
-                        <div class="btn-group">
-                            <button class="b bordcolor" type="submit">Incarca</button>
-                        </div>
+                        <br>
+                        <br><br>
+                        <br>
+                       
+                            <button class="btn btn-primary  active" type="submit">Incarca</button>
+                       
                         @isset($rata)
                             <h3>Promovabilitatea la disciplina "{{ $disciplina }}" este de: {{ $rata }}%</h3>                        
                         @endisset

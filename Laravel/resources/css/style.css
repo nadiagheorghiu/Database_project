@@ -6,6 +6,10 @@ body {
     display: flex;
 }
 
+.button {
+  text-decoration: none;
+  border-radius: 5px;
+}
 
 .main_content_section {
   margin-top: 0px;

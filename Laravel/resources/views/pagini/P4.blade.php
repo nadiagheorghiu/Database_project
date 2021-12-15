@@ -5,19 +5,19 @@
     <div class="main_content_section" style="justify-content: center;">
         <div class="row head">
             <div class="col-4 ">
-                <h2 class="header_page">Studentii care au discipline nepromovate</h2>
+                <h2 class="header_page" style="text-align: center;">Studenții care au discipline nepromovate</h2>
             </div>
 
         </div>
-
+<br><br>
         <div class="row ">
             <table class="table table-striped">
                 <thead>
                     <tr>
                         <th>Nume</th>
                         <th>Prenume</th>
-                        <th>Nr Matricol</th>
-                        <th>Nume Disciplina</th>
+                        <th>Număr Matricol</th>
+                        <th>Nume Disciplină</th>
                         <th>Nota</th>
                     </tr>
                 </thead>

@@ -5,17 +5,17 @@
     <div class="main_content_section" style="justify-content: center;">
         <div class="row head">
             <div class="col-4 ">
-                <h2 class="header_page">Tabel ordonat cu discipline promovate</h2>
+                <h2 class="header_page" style="text-align: center;">Tabel ordonat cu discipline promovate</h2>
             </div>
         </div>
-
-        <div class="row ">
+<br><br>
+        <div class="row">
             <table class="table table-striped">
                 <thead>
                     <tr>
                         <th>Nume</th>
                         <th>Prenume</th>
-                        <th>Nr Matricol</th>
+                        <th>Număr Matricol</th>
                         <th>An studiu</th>
                         <th>Disciplina</th>
                         <th>Nota</th>

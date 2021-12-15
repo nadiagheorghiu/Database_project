@@ -6,10 +6,10 @@
         <div class="main_content_section">
             <div class="row head ">
                 <div class="col-3 ">
-                    <h2 class="header_page">Adauga un student</h2>
+                    <h2 class="header_page" style="text-align: center;">Adaugă un student</h2>
                 </div>
             </div>
-
+<br>
             <form id='data' action="{{ route('adaugare_student') }}" method="POST">
                 @csrf
                 <div class="form-section">
@@ -25,8 +25,8 @@
                     <input name='legitimatie' class="form-control" type="number" required><br>
                 </div>
                 <div class="btn-group">
-                    <button class="a bcolor" type="submit">Salveaza</button>
-                    <button class="b bordcolor" type="reset">Anuleaza</button>
+                    <button class="btn btn-primary active" type="submit">Salveaza</button>
+                    <button class="btn btn-primary" type="reset">Anuleaza</button>
                 </div>
             </form>
         </div>

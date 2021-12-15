@@ -8,16 +8,18 @@
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
     <script src="{{ asset('js/file.js') }}"></script>
+    <script src='https://kit.fontawesome.com/a076d05399.js' crossorigin='anonymous'></script>
+
 </head>
 
 <header>
     @include('main.header')
 </header>
 
-    <div id="mySidenav" class="sidenav">
+   <!--- <div id="mySidenav" class="sidenav">
         @include('main.menue')
-    </div>
-    <span style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776; menu</span>
+    </div> ----->
+    <span style="font-size:30px;cursor:pointer"  >&#9776; menu</span>
 
     <div>
         @yield('content')

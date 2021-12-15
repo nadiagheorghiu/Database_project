@@ -5,12 +5,14 @@
     <div class="main_content_section" style="justify-content: center;">
         <div class="row head">
             <div class="col-4 ">
-                <h2 class="header_page">Note</h2>
+                <h2 class="header_page" style="text-align: center;">Note</h2>
             </div>
-            <div class="col-5 pt-2">
-                <button> <a href="{{route('note')}}" class="b bordcolor">Lista note</a></button>
-                <button> <a href="{{route('adaugare_nota')}}" class="b bordcolor">P.7</a></button>
+            <br>
+            <div class="col-5 pt-2"> 
+                <a href="{{route('note')}}" class="btn btn-primary  active" role="button" aria-pressed="true">Lista note</a>
+                <a href="{{route('adaugare_nota')}}" class="btn btn-primary  active" role="button" aria-pressed="true">Adauga Nota</a>
             </div>
+            <br>
         </div>
         @if($errors->any())
             <h4 style="color: red">{{$errors->first()}}</h4>
@@ -29,7 +31,7 @@
                             <th>Media pe anul 1</th>
                             <th>Media pe anul 2</th>
                             <th>Media pe anul 3</th>
-                            <th>Media generala</th>
+                            <th>Media generală</th>
                         </tr>
                     </thead>
                     <tbody>
