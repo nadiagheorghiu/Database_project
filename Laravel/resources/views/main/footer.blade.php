@@ -1,3 +1,3 @@
-<div class="container-footer">
-    <img src="" alt="">
-</div>
+<footer class="blockquote-footer">
+        <p>Realizat de Ciumeica Elena si Gheorghiu Nadejda</p>
+    </footer>

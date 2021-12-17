@@ -8,7 +8,7 @@
                     <h2 class="header_page" style="text-align: center;">Note Studenți - Tabel Ordonat</h2>
                 </div>
             </div>
-
+<br><br>
             <div class="row ">
                 <table class="table table-striped">
                     <thead>

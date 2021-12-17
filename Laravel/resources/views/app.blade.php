@@ -24,6 +24,10 @@
     <div>
         @yield('content')
     </div>
-<footer>
+<footer style="text-align: center;">
+<br>
+<br>
+<br>
+ 
     @include('main.footer')
 </footer>

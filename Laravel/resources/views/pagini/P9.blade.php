@@ -4,18 +4,18 @@
     <section class="web_site">
         <div class="main_content_section" style="justify-content: center;">
             <div class="row head">
-                <div class="col-4 ">
-                    <h2 class="header_page">Studentii doar cu note sub 5, la materii din 2 ani consecutivi</h2>
+                <div class="col-4" style="text-align: center;">
+                    <h2 class="header_page">Studenții doar cu note sub 5, la materii din 2 ani consecutivi</h2>
                 </div>
             </div>
-
+<br> <br>
             <div class="row ">
                 <table class="table table-striped">
                     <thead>
                         <tr>
                             <th>Nume</th>
                             <th>Prenume</th>
-                            <th>Nr Matricol</th>
+                            <th>Număr Matricol</th>
                             <th>Anii</th>
                         </tr>
                     </thead>
